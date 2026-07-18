@@ -18,7 +18,7 @@ body{
 .paragraph{
     border: 3px solid black;
     border-radius: 20px;
-    margin: 100px auto;
+    margin: 50px auto;
     width: 75%;
     padding: 25px 30px;
     background-color: beige;
@@ -39,7 +39,7 @@ p{
     width: 100%;
 } */
 
-input{
+textarea{
     border: 3px solid black;
     border-radius: 20px;
     width: 65%;

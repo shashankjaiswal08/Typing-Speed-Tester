@@ -14,10 +14,23 @@ const wpmEl = document.getElementById("wpm");
 const accuracyEl = document.getElementById("accuracy");
 const introBox = document.querySelector(".intro");
 const openBtn = document.getElementById("open-test");
+const mainBox = document.getElementById("main");
 
-// openBtn.addEventListener("click", () => {
-//     introBox.style.display = "none";
-// });
+if (introBox.style.display = "flex") {
+    mainBox.style.display = "none";
+}
+
+openBtn.addEventListener("click", () => {
+    introBox.style.display = "none";
+    mainBox.style.display = "flex";
+});
+
+window.addEventListener("load", () => {
+    introBox.style.display = "flex";
+    window.scrollTo(0, 0);
+    isTestRunning = false;
+    input.disabled = true;
+})
 
 startBtn.addEventListener("click", startTest);
 resetBtn.addEventListener("click", resetTest);
@@ -75,6 +88,7 @@ function resetTest() {
     timerEl.innerHTML = `Time: 60s`;
     wpmEl.innerHTML = `WPM: 0`;
     accuracyEl.innerHTML = `Accuracy: 0%`;
+    introBox.style.display = "flex";
     // New paragraph
     document.getElementById("paragraph").innerHTML = paragraphs[Math.floor(Math.random() * paragraphs.length)];
 }

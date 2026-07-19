@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'poppins', sans-serif;
 }
 
 body{
@@ -108,4 +109,58 @@ button:hover{
     border-radius: 20px;
     padding: 15px 50px;
     background-color: beige;
+}
+
+.intro {
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 15px 50px;
+    background-color: beige;
+}
+
+.intro h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.intro p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.intro input{
+    padding: 10px 25px;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    color: gray;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 163, 130);
+}
+
+.intro button{
+    padding: 10px 25px;
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 163, 130);
+}
+
+.intro button:hover{
+    background-color: rgb(255, 97, 97);
+    color: rgb(21, 0, 255);
+    cursor: pointer;
 }

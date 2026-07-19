@@ -2,7 +2,7 @@ const paragraphs = ["The quick brown fox jumps over the lazy dog. It runs away i
 
 document.getElementById("paragraph").innerHTML = paragraphs[Math.floor(Math.random() * paragraphs.length)];
 
-let timer = 60;
+let timer = document.getElementById("time-limit").value || 60;
 let interval;
 let isTestRunning = false;
 
@@ -12,6 +12,12 @@ const resetBtn = document.getElementById("reset-btn");
 const timerEl = document.getElementById("timer");
 const wpmEl = document.getElementById("wpm");
 const accuracyEl = document.getElementById("accuracy");
+const introBox = document.querySelector(".intro");
+const openBtn = document.getElementById("open-test");
+
+openBtn.addEventListener("click", () => {
+    introBox.style.display = "none";
+});
 
 startBtn.addEventListener("click", startTest);
 resetBtn.addEventListener("click", resetTest);
@@ -21,7 +27,7 @@ function startTest() {
     isTestRunning = true;
     input.disabled = false;
     input.focus();
-    timer = 60;
+    timer = timer || 60;
     timerEl.innerHTML = `Time: ${timer}s`;
     interval = setInterval(() => {
         timer--;

@@ -2,7 +2,7 @@ const paragraphs = ["The quick brown fox jumps over the lazy dog. It runs away i
 
 document.getElementById("paragraph").innerHTML = paragraphs[Math.floor(Math.random() * paragraphs.length)];
 
-let timer = document.getElementById("time-limit").value || 60;
+let timerGot = document.getElementById("time-limit").value || 60;
 let interval;
 let isTestRunning = false;
 
@@ -40,7 +40,7 @@ function startTest() {
     isTestRunning = true;
     input.disabled = false;
     input.focus();
-    timer = timer || 60;
+    timer = timerGot || 60;
     timerEl.innerHTML = `Time: ${timer}s`;
     interval = setInterval(() => {
         timer--;

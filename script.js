@@ -15,9 +15,9 @@ const accuracyEl = document.getElementById("accuracy");
 const introBox = document.querySelector(".intro");
 const openBtn = document.getElementById("open-test");
 
-openBtn.addEventListener("click", () => {
-    introBox.style.display = "none";
-});
+// openBtn.addEventListener("click", () => {
+//     introBox.style.display = "none";
+// });
 
 startBtn.addEventListener("click", startTest);
 resetBtn.addEventListener("click", resetTest);

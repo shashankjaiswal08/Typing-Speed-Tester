@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  color: white;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(35, 35, 35);
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+nav {
+  width: 85vw;
+  height: 10vh;
+  background-color: rgba(102, 102, 102, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px calc(7vw);
+  border-radius: 50px;
+  padding: 2px 50px;
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+  border: 1.5px solid lime;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  list-style: none;
+  color: white;
+  font-weight: 700;
+  font-family: "poppins";
+  font-size: 22px;
+}
+
+nav ul .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav ul .logo:hover {
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+  text-decoration-color: lime;
+  color: lime;
+}
+
+nav ul .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+nav ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: lime;
+  color: lime;
+}
+
+.page1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(49, 49, 49);
+}
+
+.page1 img {
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* .page1 video {
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.page1 h1 {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  line-height: 12vh;
+  transform: translate(-50%, -50%);
+  font-size: 65px;
+  color: white;
+}
+
+.page1 h1 span {
+  color: lime;
+}
+
+.page1 p {
+  position: absolute;
+  top: 60%;
+  left: 26.5%;
+  margin-top: 20px;
+ transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: rgb(190, 190, 190);
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.page1 button{
+  position: absolute;
+  top: 75%;
+  left: 12%;
+  font-weight: 600;
+  margin-top: 20px;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid lime;
+  background-color: lime;
+  cursor: pointer;
+}
+
+.page2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 10px;
+}
+
+.page2 .info1 {
+  width: 95%;
+  margin: 50px auto;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.page2 .info1 h2 {
+  color: white;
+  font-size: 35px;
+}
+
+.page2 .info1 .cards h3 {
+  color: lime;
+  font-size: 50px;
+}
+
+.page2 .info1 .cards {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.page2 .info1 .cards .card {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+  padding: 20px;
+  background-color: rgb(45, 45, 45);
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+.page2 .info1 .cards .card:hover {
+  border: 1px solid lime;
+  transform: translateY(-5px);
+  box-shadow: 
+    0 10px 15px -2.5px rgba(0, 255, 0, 0.5),
+    0 5px 7.5px -2.5px rgba(0, 255, 0, 0.4);
+}
+
+.page2 .info1 .cards .card h4 {
+  color: white;
+  font-size: 18px;
+  margin-top: -5px;
+}
+
+.page2 .info1 .cards .card p {
+  color: rgb(114, 111, 133);
+  font-size: 14px;
+}
+
+.page2 .info2 {
+  width: 95%;
+  height: 50%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.page2 .info2 h3 {
+  color: white;
+  font-size: 35px;
+}
+
+.page2 .info2 h3 span {
+  color: lime;
+}

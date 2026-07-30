@@ -8,6 +8,15 @@
   color: white;
 }
 
+*::selection {
+  background-color: black;
+  color: lime;
+}
+
+.page1 img::selection{
+  background-color: transparent;
+}
+
 html,
 body {
   height: 100vh;
@@ -53,13 +62,16 @@ nav ul {
   color: white;
   font-weight: 700;
   font-family: "poppins";
-  font-size: 22px;
+  font-size: 24px;
 }
 
 nav ul .logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: lime;
   cursor: pointer;
   text-decoration: none;
 }
@@ -116,7 +128,7 @@ nav ul li a:hover {
 
 .page1 h1 {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 25%;
   line-height: 12vh;
   transform: translate(-50%, -50%);
@@ -130,12 +142,12 @@ nav ul li a:hover {
 
 .page1 p {
   position: absolute;
-  top: 60%;
-  left: 26.5%;
+  top: 55%;
+  left: 27%;
   margin-top: 20px;
- transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-weight: 600;
   font-size: 18px;
-  color: rgb(190, 190, 190);
   display: flex;
   align-items: start;
   gap: 10px;
@@ -143,9 +155,9 @@ nav ul li a:hover {
 
 .page1 button{
   position: absolute;
-  top: 75%;
+  top: 72%;
   left: 12%;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 20px;
   transform: translate(-50%, -50%);
   font-size: 22px;
@@ -157,9 +169,15 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+.page1 button:hover{
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(10, 138, 10);
+  color: white;
+}
+
 .page2 {
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -170,8 +188,8 @@ nav ul li a:hover {
 
 .page2 .info1 {
   width: 95%;
-  margin: 50px auto;
-  height: 50%;
+  margin: 10px auto;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -183,6 +201,7 @@ nav ul li a:hover {
 .page2 .info1 h2 {
   color: white;
   font-size: 35px;
+  margin-bottom: -10px;
 }
 
 .page2 .info1 .cards h3 {
@@ -193,7 +212,7 @@ nav ul li a:hover {
 .page2 .info1 .cards {
   margin-top: 20px;
   width: 100%;
-  height: 100%;
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -234,20 +253,78 @@ nav ul li a:hover {
 
 .page2 .info2 {
   width: 95%;
-  height: 50%;
-  margin: 50px auto;
+  height: 40%;
+  margin: auto;
+  margin-top: -30px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   gap: 10px;
+  padding: 10px;
 }
 
-.page2 .info2 h3 {
+.page2 .info2 h2 {
   color: white;
   font-size: 35px;
+  margin-bottom: -15px;
 }
 
-.page2 .info2 h3 span {
+.page2 .info2 h2 span {
   color: lime;
 }
+
+.page2 .info2 .cards h3 {
+  color: lime;
+  font-size: 50px;
+}
+
+.page2 .info2 .cards {
+  margin-top: 20px;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.page2 .info2 .cards .card {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 15px;
+  background-color: rgb(45, 45, 45);
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+.page2 .info2 .cards .card:hover {
+  border: 1px solid lime;
+  transform: translateY(-5px);
+  box-shadow: 
+    0 10px 15px -2.5px rgba(0, 255, 0, 0.5),
+    0 5px 7.5px -2.5px rgba(0, 255, 0, 0.4);
+}
+
+.page2 .info2 .cards .card i {
+  width: 35px;
+  height: 35px;
+  color: lime;
+}
+
+.page2 .info2 .cards .card h4 {
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.page2 .info2 .cards .card p {
+  color: rgb(114, 111, 133);
+  font-size: 14px;
+}
+

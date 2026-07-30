@@ -22,9 +22,10 @@
         </nav>
         <div class="page1">
             <img src="/assets/main.png" alt="Img">
-             <!-- <video autoplay loop muted src="/assets/main.mp4"></video> -->
+            <!-- <video autoplay loop muted src="/assets/main.mp4"></video> -->
             <h1 id="main-title">Test Your <br><span>Typing Speed.</span></h1>
-            <p>Measure your speed, accuracy, and performance in real <br> time. Choose your challenge and see how fast you can <br> type.</p>
+            <p>Measure your speed, accuracy, and performance in real <br> time. Choose your challenge and see how fast
+                you can <br> type.</p>
             <button id="start-btn">Start Test</button>
         </div>
         <div class="page2">
@@ -49,12 +50,43 @@
                 </div>
             </div>
             <div class="info2">
-                <h3>Everything You Need to <span>Type Better</span></h3>
+                <h2>Everything You Need to <span>Type Better</span></h2>
+                <div class="cards">
+                    <div class="card ">
+                        <i data-lucide="zap" style="width: 35px; height: 35px; color: lime;"></i>
+                        <h4>TYPING SPEED</h4>
+                        <p>Track your Words Per Minute and understand your true typing pace.</p>
+                    </div>
+                    <div class="card">
+                        <i data-lucide="target" style="width: 35px; height: 35px; color: lime;"></i>
+                        <h4>ACCURACY</h4>
+                        <p>See exactly how accurately you type while the test is running.</p>
+                    </div>
+                    <div class="card">
+                        <i data-lucide="chart-no-axes-column" style="width: 35px; height: 35px; color: lime;"></i>
+                        <h4>DIFFICULTY</h4>
+                        <p>Choose from easy, medium, and hard challenges.</p>
+                    </div>
+                    <div class="card">
+                        <i data-lucide="clock" style="width: 35px; height: 35px; color: lime;"></i>
+                        <h4>HISTORY</h4>
+                        <p>Save your personal best and track your improvement over time.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons({
+            attrs: {
+                stroke: 'rgb(0, 255, 0)'
+            }
+        });
+    </script>
     <script src="/static/js/script.js"></script>
 </body>
 

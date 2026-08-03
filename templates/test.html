@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Your Typing Speed</title>
-    <link rel="stylesheet" href="static/test.css">
+    <link rel="stylesheet" href="/static/css/test.css">
 </head>
+
 <body>
-    Test Your Typing Speed
-    <section class="left">
-        <div class="paragraph">
-            <p class="para"></p>
-        </div>
-    </section>
-    <section class="right">
-        <div class="input">
-            <input type="text">
-        </div>
-        <div class="btn">
-            <button id="start-btn">Start Test</button>
-            <button id="reset-btn">Reset Test</button>
-        </div>
-        <div class="info">
-            <p id="timer">Time: 60s</p>
-            <p id="wpm">WPM: 0</p>
-            <p id="accuracy">Accuracy: 0%</p>
-        </div>
-    </section>
+    <main>
+        <section class="top">
+            <nav class="test-nav">
+                <div class="back-logo">
+                    <button onclick="goBack()" class="back-btn">Go Back</button>
+                    <h1 class="brand"><a href="/templates/index.html">Typin<span>Speed</span></a></h1>
+                </div>
+                <ul class="stats">
+                    <li id="timer" class="stat">Time: <span>00:00</span></li>
+                    <li id="wpm" class="stat">WPM: <span>0</span></li>
+                    <li id="accuracy" class="stat">Accuracy: <span>0<span>%</span></span></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="bottom">
+            <div class="left">
+                <div class="paragraph">
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, qui dignissimos ab
+                        doloribus iusto quia illo commodi accusamus magnam ipsam in hic facilis architecto optio.
+                        Laborum
+                        explicabo quis minus neque quas iste libero, ea amet deleniti possimus dolorum mollitia
+                        consequatur
+                        rem saepe cupiditate dignissimos similique tenetur quasi nam, maxime doloribus dolor. Animi
+                        nihil
+                        qui amet cupiditate beatae corporis voluptatibus saepe error temporibus at voluptatum vero
+                        laboriosam ullam eligendi laborum corrupti minima sunt assumenda repellendus quos, voluptates
+                        consequatur hic! Suscipit a voluptates, modi sunt ipsum assumenda amet itaque esse enim expedita
+                        at
+                        architecto. Eaque sed hic officiis. Quae facere et tempora porro commodi esse quidem facilis,
+                        corporis fugiat! Totam laudantium quidem libero at. Repudiandae aliquam perferendis alias
+                        necessitatibus error vitae architecto?</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="input">
+                    <textarea type="text" placeholder="Start typing here..."></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="/static/js/test.js"></script>
 </body>
+
 </html>

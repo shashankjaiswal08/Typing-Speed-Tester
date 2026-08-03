@@ -1,3 +1,29 @@
+const gtl = gsap.timeline()
+gtl.from(".top",{
+  y: "-100%",
+  opacity: 0,
+  duration: 1
+})
+gtl.from(".back-logo ",{
+  opacity: 0,
+  duration: 1,
+  scale: 0,
+  ease: "bounce.out"
+})
+gtl.from(".stats li",{
+  opacity: 0,
+  duration: 1,
+  scale: 0,
+  ease: "bounce.out",
+  stagger: 0.2
+})
+gsap.from(".bottom",{
+  opacity: 0,
+  scale: 0,
+  delay: 0.5,
+  duration: 1
+})
+
 const paragraphs = [
   "The quick brown fox jumps over the lazy dog. It runs away into the forest, where it finds a safe place to rest. The night is cold, but the fox is warm and comfortable.",
   "Technology has changed the way people communicate with each other. Around the world, it continues to grow faster than anyone could have imagined. Today, even a child can connect with someone on the other side of the planet.",

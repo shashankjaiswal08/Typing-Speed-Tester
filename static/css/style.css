@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
-  color: white;
+  color: rgb(150, 150, 150);
 }
 
 *::selection {
@@ -13,21 +13,15 @@
   color: lime;
 }
 
-.page1 img::selection{
+.page1 img::selection {
   background-color: transparent;
 }
 
 html,
 body {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
+  width: 100%;
   overflow-x: hidden;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(35, 35, 35);
-  scroll-behavior: smooth;
+  background: rgb(35, 35, 35);
 }
 
 main {
@@ -39,7 +33,7 @@ main {
 nav {
   width: 85vw;
   height: 10vh;
-  background-color: rgba(102, 102, 102, 0.75);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +41,7 @@ nav {
   border-radius: 50px;
   padding: 2px 50px;
   position: absolute;
-  top: 10px;
+  top: 20px;
   z-index: 10;
   border: 1.5px solid lime;
 }
@@ -59,7 +53,7 @@ nav ul {
   width: 100%;
   gap: 20px;
   list-style: none;
-  color: white;
+  color: rgb(150, 150, 150);
   font-weight: 700;
   font-family: "poppins";
   font-size: 24px;
@@ -117,23 +111,23 @@ nav ul li a:hover {
   left: 0;
 }
 
-/* .page1 video {
+.page1 video {
   object-fit: cover;
   height: 100vh;
   width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
-} */
+}
 
 .page1 h1 {
   position: absolute;
-  top: 35%;
+  top: 13%;
   left: 25%;
   line-height: 12vh;
   transform: translate(-50%, -50%);
   font-size: 65px;
-  color: white;
+  color: rgb(150, 150, 150);
 }
 
 .page1 h1 span {
@@ -142,9 +136,9 @@ nav ul li a:hover {
 
 .page1 p {
   position: absolute;
-  top: 55%;
+  top: 20%;
   left: 27%;
-  margin-top: 20px;
+  margin-top: 10px;
   transform: translate(-50%, -50%);
   font-weight: 600;
   font-size: 18px;
@@ -153,13 +147,12 @@ nav ul li a:hover {
   gap: 10px;
 }
 
-.page1 button{
+.page1 button {
   position: absolute;
-  top: 72%;
-  left: 12%;
+  top: 23%;
+  left: 7%;
   font-weight: 700;
-  margin-top: 20px;
-  transform: translate(-50%, -50%);
+  margin-top: 20px;   
   font-size: 22px;
   color: black;
   padding: 10px 20px;
@@ -169,15 +162,16 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.page1 button:hover{
+.page1 button:hover {
   transition: all 0.3s ease-in-out;
   background-color: rgb(10, 138, 10);
-  color: white;
+  transform: scale(1.2);
+  color: rgb(150, 150, 150);
 }
 
 .page2 {
   width: 100vw;
-  height: 150vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -199,9 +193,13 @@ nav ul li a:hover {
 }
 
 .page2 .info1 h2 {
-  color: white;
+  color: rgb(150, 150, 150);
   font-size: 35px;
-  margin-bottom: -10px;
+  margin-bottom: -50px;
+}
+
+.page2 .info1 h2 span {
+  color: lime;
 }
 
 .page2 .info1 .cards h3 {
@@ -210,9 +208,9 @@ nav ul li a:hover {
 }
 
 .page2 .info1 .cards {
-  margin-top: 20px;
+  margin-top: -70px;
   width: 100%;
-  height: 50%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -221,7 +219,7 @@ nav ul li a:hover {
 
 .page2 .info1 .cards .card {
   width: 35%;
-  height: 100%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -235,13 +233,13 @@ nav ul li a:hover {
 .page2 .info1 .cards .card:hover {
   border: 1px solid lime;
   transform: translateY(-5px);
-  box-shadow: 
+  box-shadow:
     0 10px 15px -2.5px rgba(0, 255, 0, 0.5),
     0 5px 7.5px -2.5px rgba(0, 255, 0, 0.4);
 }
 
 .page2 .info1 .cards .card h4 {
-  color: white;
+  color: rgb(150, 150, 150);
   font-size: 18px;
   margin-top: -5px;
 }
@@ -254,8 +252,9 @@ nav ul li a:hover {
 .page2 .info2 {
   width: 95%;
   height: 40%;
-  margin: auto;
-  margin-top: -30px;
+  margin: 10px auto;
+  margin-top: -200px;
+  margin-bottom: -50px  ;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -265,9 +264,9 @@ nav ul li a:hover {
 }
 
 .page2 .info2 h2 {
-  color: white;
+  color: rgb(150, 150, 150);
   font-size: 35px;
-  margin-bottom: -15px;
+  margin-bottom: -35px;
 }
 
 .page2 .info2 h2 span {
@@ -280,9 +279,9 @@ nav ul li a:hover {
 }
 
 .page2 .info2 .cards {
-  margin-top: 20px;
+  margin-top: -80px;
   width: 100%;
-  height: 60%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -291,7 +290,7 @@ nav ul li a:hover {
 
 .page2 .info2 .cards .card {
   width: 30%;
-  height: 90%;
+  height: 38%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -306,7 +305,7 @@ nav ul li a:hover {
 .page2 .info2 .cards .card:hover {
   border: 1px solid lime;
   transform: translateY(-5px);
-  box-shadow: 
+  box-shadow:
     0 10px 15px -2.5px rgba(0, 255, 0, 0.5),
     0 5px 7.5px -2.5px rgba(0, 255, 0, 0.4);
 }
@@ -318,7 +317,7 @@ nav ul li a:hover {
 }
 
 .page2 .info2 .cards .card h4 {
-  color: white;
+  color: rgb(150, 150, 150);
   font-size: 18px;
   margin-top: 5px;
 }
@@ -328,3 +327,339 @@ nav ul li a:hover {
   font-size: 14px;
 }
 
+.page2 .link2 {
+  width: 95%;
+  height: 20%;
+  margin-top: -10px ;
+  margin: 5px auto;
+  background-color: rgb(45, 45, 45);
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin-top: -30px;
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px;
+}
+
+.page2 .link2 h2 {
+  color: rgb(150, 150, 150);
+  font-size: 35px;
+  margin-bottom: -15px;
+}
+
+.page2 .link2 h2 span {
+  color: lime;
+}
+
+.page2 .link2 p {
+  color: rgb(114, 111, 133);
+  font-size: 14px;
+}
+
+.page2 .link2 button {
+  font-weight: 700;
+  font-size: 22px;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid lime;
+  background-color: lime;
+  cursor: pointer;
+}
+.page2 .link2 button:hover {
+  border: 1px solid lime;
+  transform: translateY(-5px);
+  box-shadow:
+    0 10px 15px -2.5px rgba(0, 255, 0, 0.5),
+    0 5px 7.5px -2.5px rgba(0, 255, 0, 0.4);
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: rgb(45, 45, 45);
+  border-top: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+footer .footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .footer p {
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+}
+
+footer .links {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .links a {
+  color: lime;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: rgb(0, 132, 0);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+  nav {
+    width: calc(100% - 48px);
+    margin: 10px 24px;
+    padding: 2px 32px;
+  }
+
+  nav ul {
+    font-size: 19px;
+  }
+
+  .page1 h1 {
+    left: 30%;
+    font-size: clamp(42px, 6vw, 60px);
+    line-height: 1.2;
+  }
+
+  .page1 p {
+    left: 32%;
+    font-size: 16px;
+  }
+
+  .page1 button {
+    left: 15%;
+  }
+
+  .page2 {
+    height: auto;
+    min-height: 100vh;
+    padding: 48px 24px;
+    gap: 56px;
+    justify-content: flex-start;
+  }
+
+  .page2 .info1,
+  .page2 .info2,
+  .page2 .link2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .page2 .info1 .cards,
+  .page2 .info2 .cards {
+    display: grid;
+    height: auto;
+    margin-top: 18px;
+    align-items: stretch;
+    gap: 18px;
+  }
+
+  .page2 .info1 .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .page2 .info2 .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page2 .info1 h2,
+  .page2 .info2 h2 {
+    margin-bottom: 0;
+  }
+
+  .page2 .info1 .cards .card,
+  .page2 .info2 .cards .card {
+    width: 100%;
+    height: auto;
+    min-height: 175px;
+  }
+
+  .page2 .link2 {
+    min-height: 230px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    width: calc(100% - 32px);
+    height: auto;
+    min-height: 64px;
+    margin: 8px 16px;
+    padding: 12px 20px;
+    top: 8px;
+  }
+
+  nav ul,
+  nav ul .links {
+    gap: 14px;
+  }
+
+  nav ul {
+    font-size: 15px;
+  }
+
+  nav ul .logo {
+    font-size: 24px;
+  }
+
+  .page1 {
+    min-height: 700px;
+    height: 100svh;
+  }
+
+  .page1 h1 {
+    top: 34%;
+    left: 50%;
+    width: calc(100% - 40px);
+    text-align: center;
+    font-size: clamp(38px, 10vw, 54px);
+    line-height: 1.15;
+  }
+
+  .page1 p {
+    top: 54%;
+    left: 50%;
+    width: calc(100% - 40px);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .page1 p br {
+    display: none;
+  }
+
+  .page1 button {
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .page2 {
+    padding: 42px 16px;
+    gap: 44px;
+  }
+
+  .page2 .info1,
+  .page2 .info2 {
+    padding: 0;
+  }
+
+  .page2 .info1 h2,
+  .page2 .info2 h2,
+  .page2 .link2 h2 {
+    font-size: clamp(27px, 7vw, 35px);
+    line-height: 1.2;
+  }
+
+  .page2 .info1 .cards,
+  .page2 .info2 .cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .page2 .info1 .cards .card,
+  .page2 .info2 .cards .card {
+    min-height: 165px;
+    padding: 18px;
+  }
+
+  .page2 .link2 {
+    min-height: 245px;
+    padding: 24px 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 10px 14px;
+  }
+
+  nav ul,
+  nav ul .links {
+    gap: 9px;
+  }
+
+  nav ul {
+    font-size: 12px;
+  }
+
+  nav ul .logo {
+    font-size: 20px;
+  }
+
+  .page1 {
+    min-height: 620px;
+  }
+
+  .page1 h1 {
+    top: 10%;
+    font-size: 50px;
+  }
+
+  .page1 p {
+    top: 15%;
+    font-size: 20px;
+  }
+
+  .page1 button {
+    top: 19%;
+    font-size: 18px;
+  }
+
+  .page2 .info1 .cards,
+  .page2 .info2 .cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .page2 .info1 .cards .card,
+  .page2 .info2 .cards .card {
+    min-height: 0;
+  }
+
+  .page2 .info1{
+    margin-top: 50px ;
+  }
+
+  .page2 .info2{
+    margin: 50px auto;
+  }
+
+  .page2 .info1, .page2 .info2 {
+    gap: 18px;
+  }
+
+  .page2 .link2 h2 {
+    font-size: 26px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
